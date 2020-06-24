@@ -1,0 +1,291 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: #dadada;
+    background-image: url('https://digitalsynopsis.com/wp-content/uploads/2013/12/subtle-patterns-website-8.gif');
+    background-blend-mode: multiply;
+
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+}
+
+a {
+    color: #333;
+}
+
+.section_title p {
+    color: #989898;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.container {
+    position: relative;
+}
+
+/*Theme Mode*/
+
+.checkBox {
+
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    z-index: 999;
+    width: 100px;
+    height: 40px;
+/*
+    background: linear-gradient(0deg, #d8d8d8, #ccc);
+    border-radius: 25px;
+    border-top: 0.2em solid #ececec;
+    border-bottom: 0.2em solid #ececec;
+*/
+}
+
+@media screen and (max-width:991px){
+    .checkBox {
+   top: 15px;
+}
+}
+.checkBox .inner {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: linear-gradient(0deg, #e8cb39, #ffa500);
+    border-radius: 25px;
+/*    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5)*/
+}
+
+.checkBox .inner .toggle {
+    position: absolute;
+    top: -10px;
+    right: -3px;
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(0deg, #ccc, #e4e4e4);
+    border-radius: 50%;
+/*    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);*/
+    border-top: 0.04em solid #ececec;
+    border-bottom: 0.01em solid #ececec;
+    transition: 0.5s;
+}
+
+.checkBox .inner .toggle:before {
+    content: "OFF";
+    font-size: 10px;
+    line-height: 28px;
+    color: #777;
+    text-align: center;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    background: linear-gradient(0deg, #e4e4e4, #ccc);
+    border-radius: 50%;
+}
+
+.checkBox .inner.active .toggle:before {
+    content: "ON";
+    color: #eec834;
+}
+
+.checkBox .inner.active .toggle {
+    right: 45px;
+}
+
+.checkBox .inner.active {
+   background: linear-gradient(0deg, #abaaa9, #252421);
+    box-shadow: inset 0px 0px 15px rgba(206, 201, 201,0.5)
+}
+
+/*Progressbar*/
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.progressbar {
+    width: 10px;
+    position: fixed;
+    background: linear-gradient(to top, #ffa500, #ea3113, #ecc67e);
+    top: 0;
+    right: 0;
+    border-radius: 10px;
+}
+
+
+
+/*---- Main CSS Style ----*/
+section {
+    background: #fff;
+    padding: 50px 0;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+
+.profile_area {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.img_profile {
+/*    background-color: orange;*/
+    padding: 5px;
+    border-radius: 100%;
+}
+
+.img_profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* filter: grayscale(1); */
+        border: 3px solid orange;
+}
+
+.info_profile {
+/*    margin-left: 40px;*/
+    padding: 15px 25px 0;
+}
+
+.info_profile ul li span.ash_color {
+    font-size: 19px;
+    font-style: italic;
+    color: #989898;
+}
+
+.skill {
+    width: 500px;
+}
+@media screen and (max-width:991px){
+    .skill {
+   width: 100%;
+}
+}
+
+.skill a {
+    display: inline-block;
+    padding: 0px 8px;
+    border: 1px solid orange;
+    border-radius: 12px;
+    margin: 3px 2px;
+}
+
+.info_profile ul li a i {
+    font-size: 20px;
+    margin: 5px 3px;
+    cursor: pointer;
+}
+
+
+/*--- Filter area ---*/
+.work_area {}
+
+.work_area h2 {}
+
+.filter_area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+.filter_area li {
+    margin: 4px;
+    padding: 5px 8px;
+    border: 1px solid orange;
+        cursor: default;
+}
+.filter_area .filter_btn.active{
+    background: orange;
+}
+
+.filter_area .marker{
+  position:absolute;
+  left:50%;
+  bottom:8px;
+  width:0;
+  background:red;
+  height:3px;
+  transition:.5s;
+  border-radius:5px
+}
+/*Project_filter*/
+.project_list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+
+
+}
+
+.project_item {
+    position: relative;
+    width: 250px;
+    /*            height: 250px;*/
+    flex-grow: 1;
+    margin: 0 0 20px 20px;
+    background: #e6e6e6;
+    padding: 10px 10px 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+
+}
+
+img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.project_item a {
+
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: orange;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 30px;
+    color: #000;
+    transform: skewX(-10deg) translateX(-50%);
+}
+
+/*======= DARK Theme------
+========*/
+body.dark{
+    background: #666;
+    color: #f3f3f3;
+    background-image: url('https://cdn.pixabay.com/photo/2020/02/16/00/17/background-4852316_960_720.jpg');
+    width: 100%;
+    background-attachment: fixed;
+    background-origin: content-box;
+        background-blend-mode: multiply;
+
+
+}
+.dark {
+    background: #1d1d1d;
+       color: #f3f3f3;
+}

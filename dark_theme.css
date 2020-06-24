@@ -1,0 +1,18 @@
+
+body{
+    background: #666;
+    color: #f3f3f3;
+
+}
+section.dark {
+    background: #444;
+}
+.info_profile ul li span.ash_color {
+
+    color: #bbb;
+}
+.section_title p {
+    color: #bbb;
+    font-style: italic;
+    font-size: 18px;
+}
