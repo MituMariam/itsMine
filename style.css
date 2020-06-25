@@ -26,6 +26,9 @@ h5 {
 a {
     color: #333;
 }
+a:hover{
+    text-decoration: none;
+}
 
 .section_title p {
     color: #989898;
@@ -152,6 +155,7 @@ section {
 /*    background-color: orange;*/
     padding: 5px;
     border-radius: 100%;
+        text-align: center;
 }
 
 .img_profile img {
@@ -166,6 +170,10 @@ section {
 .info_profile {
 /*    margin-left: 40px;*/
     padding: 15px 25px 0;
+}
+.img_profile h5 a{
+    border-bottom: 10px solid orange;
+    font-style:italic;
 }
 
 .info_profile ul li span.ash_color {
@@ -214,7 +222,7 @@ section {
     margin: 4px;
     padding: 5px 8px;
     border: 1px solid orange;
-        cursor: default;
+        cursor: pointer;
 }
 .filter_area .filter_btn.active{
     background: orange;
