@@ -1,3 +1,7 @@
+
+:root {
+  --orange-color: #ff8300;
+}
 body {
     padding: 0;
     margin: 0;
@@ -164,7 +168,7 @@ section {
     border-radius: 50%;
     object-fit: cover;
     /* filter: grayscale(1); */
-        border: 3px solid orange;
+        border: 3px solid #ff8300;
 }
 
 .info_profile {
@@ -172,7 +176,7 @@ section {
     padding: 15px 25px 0;
 }
 .img_profile h5 a{
-    border-bottom: 10px solid orange;
+    border-bottom: 10px solid #ff8300;
     font-style:italic;
 }
 
@@ -194,7 +198,7 @@ section {
 .skill a {
     display: inline-block;
     padding: 0px 8px;
-    border: 1px solid orange;
+    border: 1px solid #ff8300;
     border-radius: 12px;
     margin: 3px 2px;
 }
@@ -221,11 +225,11 @@ section {
 .filter_area li {
     margin: 4px;
     padding: 5px 8px;
-    border: 1px solid orange;
+    border: 1px solid #ff8300;
         cursor: pointer;
 }
 .filter_area .filter_btn.active{
-    background: orange;
+    background: #ff8300;
 }
 
 .filter_area .marker{
@@ -271,7 +275,7 @@ img {
     bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
-    background: orange;
+    background: #ff8300;
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
