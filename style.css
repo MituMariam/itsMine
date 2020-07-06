@@ -211,7 +211,22 @@ section {
 
 
 /*--- Filter area ---*/
-.work_area {}
+.work_area {
+    position: relative;
+    overflow: hidden;
+}
+.work_area:before{
+    position: absolute;
+    content: "";
+    width: 300px;
+    height: 100px;
+    background: #ff8300;
+    top: 0;
+    left: 0;
+    transform: skew(0, -20deg) translateY(-78px);
+}
+
+
 
 .work_area h2 {}
 
